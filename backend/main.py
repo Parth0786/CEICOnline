@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 import os
 import uvicorn
 import traceback
-from .routes import news, admin, upload
-from .database import init_db
+from routes import news, admin, upload
+from database import init_db
 
 load_dotenv()
 
