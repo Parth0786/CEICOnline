@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 env_path = Path(__file__).parent / ".env"
 load_dotenv(env_path)
 
-MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017")
+MONGO_URL = os.getenv("MONGO_URL", "mongodb+srv://Task:1234@cluster0.lnxh7gs.mongodb.net/education_news?retryWrites=true&w=majority")
 DB_NAME = os.getenv("DB_NAME", "education_news")
 
 print(f"Connecting to MongoDB: {MONGO_URL[:40]}...")  # Debug log

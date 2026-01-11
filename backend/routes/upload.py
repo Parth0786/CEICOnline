@@ -25,7 +25,7 @@ async def upload_image(file: UploadFile = File(...)):
             shutil.copyfileobj(file.file, buffer)
             
         # Return URL (assuming localhost:8000 for now, can be configured)
-        url = f"http://localhost:8000/static/uploads/{filename}"
+        url = f"http://{HOST}:{PORT}/static/uploads/{filename}"
         
         return {"url": url}
     except Exception as e:
